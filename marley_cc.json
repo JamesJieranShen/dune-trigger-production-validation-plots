@@ -1,0 +1,67 @@
+{
+  "files": "/nfs/disk1/dune/trigger-production-validation/prodmarley_nue_flat_cc_dune10kt_1x2x2/triggerAna/*.root",
+  "outdir": "figs/marley_cc",
+  "blocks": [
+    {
+      "suptitle": "MCTruths",
+      "image_prefix": "mctruths",
+      "tree": "triggerAnaDumpAll/mctruths",
+      "grid": [3, 5],
+      "figsize": [30, 20],
+      "labels": {
+        "x": "cm",
+        "y": "cm",
+        "z": "cm",
+        "en": "GeV",
+        "Px": "GeV",
+        "Py": "GeV",
+        "Pz": "GeV"
+      },
+      "kinetic_energy": true
+    },
+    {
+      "suptitle": "MCParticles",
+      "image_prefix": "mcparticles",
+      "tree": "triggerAnaDumpAll/mcparticles",
+      "grid": [4, 4],
+      "figsize": [30, 20],
+      "labels": {
+        "x": "cm",
+        "y": "cm",
+        "z": "cm",
+        "en": "GeV",
+        "Px": "GeV",
+        "Py": "GeV",
+        "Pz": "GeV"
+      },
+      "kinetic_energy": true
+    },
+    {
+      "suptitle": "SimIDEs",
+      "image_prefix": "simides",
+      "tree": "triggerAnaDumpAll/simides",
+      "grid": [4, 3],
+      "figsize": [20, 20],
+      "labels": {
+        "x": "cm",
+        "y": "cm",
+        "z": "cm",
+        "Energy": "MeV"
+      }
+    },
+    {
+      "suptitle": "TP (Simple Threshold)",
+      "image_prefix": "tp_simple_threshold",
+      "tree": "triggerAnaDumpAll/TriggerPrimitives/tpmakerTPCsimpleThr__TriggerAnaTree1x2x6",
+      "grid": [4, 4],
+      "figsize": [20, 20]
+    },
+    {
+      "suptitle": "TP (Absolute Running Sum)",
+      "image_prefix": "tp_absrs",
+      "tree": "triggerAnaDumpAll/TriggerPrimitives/tpmakerTPCabsRS__TriggerAnaTree1x2x6",
+      "grid": [4, 4],
+      "figsize": [20, 20]
+    }
+  ]
+}
